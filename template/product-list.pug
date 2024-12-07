@@ -1,0 +1,274 @@
+extends ../layouts/default.pug
+include ../mixins/breadcumb.pug
+block title 
+    title Danh sach san pham
+        
+block main
+    //- Box Breadcumb
+    -
+        var breadcumb = [
+            {
+                link: "#",
+                title: "Trang chu"
+            },
+            {
+                link: "#",
+                title: "Cho"
+            },
+            {
+                link: "#",
+                title: "Cho nho"
+            }
+        ];
+    +breadcumb(breadcumb,"container")
+    //- End Box Breadcumb
+
+    //- Section 1
+    include ../partials/section-3.pug
+    //- End Section 1
+
+    //- Layout Product
+    .layout-product 
+        .container 
+            .layout-product__wrap
+                .layout-product__left 
+                    .filter 
+                        .filter__title 
+                            <i class="fa-solid fa-filter"></i>
+                            | Bộ lọc
+                        .filter__list 
+                            .filter__item 
+                                .filter__box-title Giống
+                                .filter__box 
+                                    .filter__choose 
+                                        input(type="checkbox")
+                                        label Đực
+                                    .filter__choose 
+                                        input(type="checkbox")
+                                        label Cái
+
+                            .filter__item 
+                                .filter__box-title Màu sắc
+                                .filter__box 
+                                    .filter__choose 
+                                        input(type="checkbox")
+                                        label Xám
+                                    .filter__choose 
+                                        input(type="checkbox")
+                                        label Đen
+                                    .filter__choose 
+                                        input(type="checkbox")
+                                        label Trắng
+
+                            .filter__item 
+                                .filter__box-title Kích thước
+                                .filter__box 
+                                    .filter__choose 
+                                        input(type="checkbox")
+                                        label Nhỏ
+                                    .filter__choose 
+                                        input(type="checkbox")
+                                        label Vừa
+                                    .filter__choose 
+                                        input(type="checkbox")
+                                        label Lớn
+                .layout-product__right
+                    .layout-product__head 
+                        .layout-product__title
+                            | Chó Nhỏ
+                        .layout-product__filter
+                            <i class="fa-solid fa-filter"></i>
+                            | Bộ lọc
+                    .layout-product__list
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                        .product-item
+                            a(class="product-item__image" href="#")
+                                img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                            .product-item__content
+                                h3.product-item__title
+                                    a(href="#") MO231 - Pomeranian Trắng
+                                .product-item__desc
+                                    .product-item__gender
+                                        | Giống: <b>Đực</b>
+                                    .product-item__dot
+                                        img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                                    .product-item__age
+                                        | Tuổi: <b>02 tháng</b>
+                                .product-item__price 6.900.000 VND
+
+                    .layout-product__pagination
+                        .pagination 
+                            button.pagination__button <i class="fa-solid fa-left-long"></i> 
+                            button.pagination__button.pagination__button--active 1
+                            button.pagination__button 2
+                            button.pagination__button 3
+                            button.pagination__button 4
+                            butotn.pagination__button.pagination__button--disabled ...
+                            button.pagination__button 28
+                            button.pagination__button <i class="fa-solid fa-right-long"></i>       
+
+    //- End Layout Product

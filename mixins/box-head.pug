@@ -1,0 +1,9 @@
+mixin box-head(subTitle, title, link)
+    .box-head
+        .box-head__left
+            p(class="box-head__sub-title") #{subTitle}
+            p(class="box-head__title") #{title}
+        if(link)
+            .box-head__right
+                a(href=link class="button button--outline") 
+                    | Xem thêm  <i class="fa-solid fa-greater-than"></i>

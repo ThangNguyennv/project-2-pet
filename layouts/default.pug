@@ -1,0 +1,74 @@
+doctype html 
+html 
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        block title 
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css")
+        link(rel="stylesheet", href="assets/css/style.css")
+    body 
+        //- Header 
+        header.header
+            .container
+                .header__wrap
+                    button.header__button-menu
+                        i(class="fa-solid fa-bars")
+                    .header__logo
+                        a(href="product-list.html")
+                            img(src="assets/image/logo.svg" alt="Monitor")
+                    nav.header__menu
+                        ul
+                            li
+                                a(href="product-list.html") Trang Chủ
+                            li
+                                a(href="#") Danh Mục
+                            li
+                                a(href="#") Giới Thiệu
+                            li
+                                a(href="#") Liên Hệ
+                    .header__button-search
+                        i(class="fa-solid fa-magnifying-glass")
+                    form(action="" class="header__search")
+                        i(class="fa-solid fa-magnifying-glass")
+                        input(type="text" placeholder="Nhập từ khóa...")
+                    a(href="#" class="button") Tham Gia Cộng Đồng
+        //- End Header 
+
+        block main 
+
+        //- Footer
+        footer.footer
+            .container
+                .footer__wrap
+                    .footer__top
+                        .footer__title
+                            p Đăng ký ngay để không bỏ lỡ các 
+                            p chương trình của chúng tôi
+                        .footer__form
+                            .footer__text
+                                input(type="text" class="footer__form-input" placeholder="Nhập email của bạn...")
+                            .button.footer__button
+                                a(href="#") Đăng Ký Ngay
+
+                    .footer__center
+                        .footer__head
+                            a(href="#" class="footer__home") Trang Chủ
+                            a(href="#" class="footer__list") Danh Mục
+                            a(href="#" class="footer__intro") Giới Thiệu
+                            a(href="#" class="footer__contact") Liên Hệ
+                        .footer__social
+                            a(href="#" target="_blank") <i class="fa-brands fa-facebook"></i>
+                            a(href="#" target="_blank") <i class="fa-brands fa-twitter"></i>
+                            a(href="#" target="_blank") <i class="fa-brands fa-instagram"></i>
+                            a(href="#" target="_blank") <i class="fa-brands fa-youtube"></i>
+
+                    .footer__bottom
+                        .footer__copy-right © 2023 Code Craf. All rights reserved.            
+                        .footer__logo
+                            a(href="product-list.html")
+                                img(src="assets/image/logo.svg" alt="")
+                        .footer__clause
+                            a(href="#" class="footer__condition") Điều khoản dịch vụ
+                            a(href="#" class="footer__policy") Chính sách bảo mật
+        //- End Footer
+            

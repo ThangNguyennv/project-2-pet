@@ -1,0 +1,160 @@
+extends ../layouts/default.pug
+include ../mixins/breadcumb.pug
+include ../mixins/box-head.pug
+
+block title 
+    title Chi tiet san pham 
+
+block main 
+    
+    //- Product Info
+    .product-info 
+        .container 
+            .product-info__wrap
+                .product-info__left 
+                    .product-info__image-main 
+                        img(src="assets/image/product-info-image-main.png")
+                    .product-info__image-thumb 
+                        img(src="assets/image/product-info-image-sub1.jpg")
+                        img(src="assets/image/product-info-image-sub2.jpg", alt="")
+                        img(src="assets/image/product-info-image-sub3.jpg", alt="")
+                        img(src="assets/image/product-info-image-sub4.jpg", alt="")
+                        img(src="assets/image/product-info-image-sub5.jpg", alt="")
+                .product-info__right 
+                    //- Box Breadcumb
+                    -
+                        var breadcumb = [
+                            {
+                                link: "#",
+                                title: "Trang chu"
+                            },
+                            {
+                                link: "#",
+                                title: "Cho"
+                            },
+                            {
+                                link: "#",
+                                title: "Cho nho"
+                            },
+                            {
+                                link: "#",
+                                title: "Shiba Inu Màu Nâu Đỏ"
+                            }
+                        ];
+                    +breadcumb(breadcumb)
+                    //- End Box Breadcumb
+
+                    h1.product-info__title-main Shiba Inu Màu Nâu Đỏ
+                    h2.product-info__price 12.000.000 VND
+                    .product-info__buttons
+                        a(href="#" class="button") Liên hệ
+                        a(href="#" class="button button--outline") <i class="fa-brands fa-rocketchat"></i> Chat với Monito
+                    .product-info__table 
+                        table 
+                            tbody 
+                                tr 
+                                    td SKU
+                                    td #1000078
+                                tr 
+                                    td Giống
+                                    td Cái
+                                tr 
+                                    td Tuổi
+                                    td 2 tháng
+                                tr 
+                                    td Kích thước
+                                    td Nhỏ
+                                tr 
+                                    td Màu sắc
+                                    td Nâu đỏ
+                                tr 
+                                    td Mô tả ngắn
+                                    td Giống thuần chủng Shih Tzu. Cấu trúc cơ thể tốt. Với chứng chỉ MKA và Microchip. Cha từ dòng dõi vô địch.
+                                            
+
+                    nav.box-share
+                        .box-share__label <i class="fa-solid fa-share-nodes"></i> Chia sẻ
+                        ul.box-share__list  
+                            li 
+                                a(href="#" target="_blank") <i class="fa-brands fa-facebook"></i>
+                                a(href="#" target="_blank") <i class="fa-brands fa-twitter"></i>
+                                a(href="#" target="_blank") <i class="fa-brands fa-instagram"></i>
+                                a(href="#" target="_blank") <i class="fa-brands fa-youtube"></i>
+                               
+
+    //- End Product Info
+
+    //- Section 2
+    .section-2
+        .container
+            +box-head(
+                "Có gì mới?",
+                "một số vật nuôi của chúng tôi"
+            )
+            .section-2__wrap
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+               
+
+            div(class="section-2__button-bottom")
+                a(href="#" class="button button--outline") 
+                    | Xem thêm <i class="fa-solid fa-greater-than"></i>
+    //- End Section 2

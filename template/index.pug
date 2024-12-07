@@ -1,0 +1,204 @@
+extends ../layouts/default.pug
+include ../mixins/box-head.pug
+block title 
+    title Trang chu
+        
+block main
+    //- Section 1
+    .section-1
+        .container
+            .section-1__wrap
+                img(src="assets/image/section-1-bg-1.svg" class="section-1__bg-1" alt="")
+                img(src="assets/image/section-1-bg-2.svg" class="section-1__bg-2" alt="")
+                .section-1__content
+                    h1.section-1__title Thêm Một Bạn
+                    h2.section-1__sub-title Thêm Ngàn Niềm Vui!
+                    p.section-1__desc Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+                    .section-1__buttons
+                        a(href="#" class="button button--outline") 
+                            | Giới Thiệu <i class="fa-regular fa-circle-play"></i>
+                        a(href="#" class="button") Khám Phá Ngay
+                img(src="assets/image/section-1-bg-3.svg" class="section-1__bg-3" alt="")
+                .section-1__image
+                    img(src="assets/image/section-1-bg-4.svg" class="section-1__bg-4" alt="")
+                    img(src="assets/image/section-1-image-main.png" class="section-1__image-main" alt="")
+    //- End Section 1
+
+    //- Section 2
+    .section-2
+        .container
+            +box-head(
+                "Có gì mới?",
+                "một số vật nuôi của chúng tôi",
+                "#"
+            )
+            .section-2__wrap
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+                .product-item
+                    a(class="product-item__image" href="#")
+                        img(alt="" src="assets/image/section-2-inner-bg-1.jpg")
+                    .product-item__content
+                        h3.product-item__title
+                            a(href="#") MO231 - Pomeranian Trắng
+                        .product-item__desc
+                            .product-item__gender
+                                | Giống: <b>Đực</b>
+                            .product-item__dot
+                                img(alt="" src="assets/image/section-2-inner-circle-icon.jpg")
+                            .product-item__age
+                                | Tuổi: <b>02 tháng</b>
+                        .product-item__price 6.900.000 VND
+
+            div(class="section-2__button-bottom")
+                a(href="#" class="button button--outline") 
+                    | Xem thêm <i class="fa-solid fa-greater-than"></i>
+    //- End Section 2
+
+    //- Section 3
+    include ../partials/section-3.pug
+    //- End Section 3
+
+    //- Section 4
+    .section-4
+        .container
+            +box-head(
+                "Có thể bạn đã biết?",
+                "Kiến thức thú cưng hữu ích",
+                "#"
+            )
+            .section-4__wrap
+                .blog-item
+                    .blog-item__image
+                        img(src="assets/image/section-4-inner-bg-1.jpg" alt="")
+                    .blog-item__content
+                        .blog-item__tag Kiến thức thú cưng
+                        .blog-item__title Pomeranian là gì? Cách nhận biết chó Pomeranian
+                        .blog-item__desc Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+                
+                .blog-item
+                    .blog-item__image
+                        img(src="assets/image/section-4-inner-bg-1.jpg" alt="")
+                    .blog-item__content
+                        .blog-item__tag Kiến thức thú cưng
+                        .blog-item__title Pomeranian là gì? Cách nhận biết chó Pomeranian
+                        .blog-item__desc Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+
+                .blog-item
+                    .blog-item__image
+                        img(src="assets/image/section-4-inner-bg-1.jpg" alt="")
+                    .blog-item__content
+                        .blog-item__tag Kiến thức thú cưng
+                        .blog-item__title Pomeranian là gì? Cách nhận biết chó Pomeranian
+                        .blog-item__desc Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+    
+            .section-4__button-bottom
+                a(href="#" class="button button--outline")
+                    | Xem thêm <i class="fa-solid fa-greater-than"></i>
+    //- End Section 4
+
+        
+            

@@ -1,0 +1,8 @@
+mixin breadcumb(list, className="")
+    nav.box-breadcumb 
+        div(class=className)
+            ul.box-breadcumb__list
+                each item in breadcumb
+                    li.box-breadcumb__item
+                        a(href=item.link class="box-breadcumb__link") #{item.title}
+                        i(class="fa-solid fa-angle-right")
